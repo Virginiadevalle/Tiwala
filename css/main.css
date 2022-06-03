@@ -6,80 +6,13 @@
     --degradado-bottom-2: #CECECC;
 }
 
-/* Utilidades */
 
-/* Btn start */
-.btn{
-    padding: 0px 40px ;  
-    border-radius: 50px;
-    text-decoration: none; 
-    border: 1px solid #fff;  
-    box-shadow: none;
-    outline: #fff;
-} 
-.btn:hover{
-    background-color: var(--degradado-bottom); 
-    border: 1px solid var(--degradado-bottom);
-} 
-.btn:active, .btn:active:focus, .btn:focus{
-    background-color: var(--degradado-bottom);
-    border-color: var(--degradado-bottom);
-    box-shadow: var(--degradado-bottom);
-}
-.btn-primary{
-    background-color: var(--primary-color);
-    box-shadow: none;
-}
-
-
-/* Btn end*/
- /* colores */
-.color-primary{
-    color: var(--primary-color);
-}
-/* colores end */
-
-/* backgrounds */
-.bg-primary-color{
-    background-color: #9E1E93;
-}
-.bg-btn{
-    background-color: #9E1E93;
-}
-/* backgrounds end*/
-/* Fuentes */
-.font-size-18{
-    font-size: 18px;
-}
-.font-size-100{
-    font-size: 100px;
-    text-transform: uppercase;
-
-}
-/* Fuentes end */
-
-/* margins */
-.mt-150{
-    margin-top: 150px;
-}
-.me-100{
-    margin-right: 100px;
-}
-
-
-/* margins end */
 /* seccion header start */
 .hero{
     background-image: url(../img41.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 900px;
-    
-}
-
-.m-whidth-200{
-    max-width: 180px; 
 }
 
 .header-formulario-input{
@@ -87,7 +20,7 @@
     background-color: transparent;
     border: 1px solid white;
     box-shadow: none;
-
+    padding: 5px; 
 }
 /* seccion header end */
 
@@ -96,7 +29,12 @@
     background-image: url(../img42.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    height: 900px;
+    background-size: cover;
+}
+.servicios-card{
+    border: 1px solid white;
+    padding: 20px;
+    text-align: center;
 }
 /* seccion servicios end */
 
@@ -106,23 +44,27 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 600px;
+    
 }
 .nuestro-equipo-card-img-2{
     background-image: url(../img43.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 600px;
+    
 }
 .nuestro-equipo-card-img-3{
     background-image: url(../img44.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 600px;
+    
 }
 /* seccion nuestro equipo end */
+
+/* Ubicacion start  */
+
+/* Ubicacion end  */
 
 /* seccion contacto start */
 .contacto-img{
@@ -130,6 +72,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 900px;
+    
 }
 /* seccion contacto end */
