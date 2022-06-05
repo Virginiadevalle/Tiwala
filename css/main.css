@@ -50,6 +50,7 @@ img{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left center;
+  position: relative;
 }
 
 .header-formulario-input {
@@ -91,20 +92,34 @@ img{
   padding: 20px;
   text-align: center;
 }
-.servicios{
+
+.servicios{ 
+    min-height: 650px;
+    padding-top: 30px ;   
+}
+@media (min-width: 992px) {  
+  .servicios{
     min-height: 650px;
     padding: 4rem;
+} 
 }
 .carrusel-servicio{
     position: relative;
 }
 .carrusel-servicio-arrow{
+  display: none;
+}
+
+@media (min-width: 992px ) { 
+  .carrusel-servicio-arrow{
     display: block;
     min-width: 60px;
-    max-width: 60px;
+    max-width: 60px; 
     position: absolute;
     cursor: pointer;
 }
+}
+
 .servicios-item-icon{
     width: 70px;
     height: 65px;
@@ -211,4 +226,55 @@ img{
 
 .owl-nav, .owl-dots{
     display: none;
+}
+
+.menu-responsibe{
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0; 
+  bottom: 0; 
+  background-color: #eee;
+  z-index: 3;
+  justify-content: center;
+  transform: translateX(-100%);
+  transition: all ease-in .3s;
+}
+
+.menu-responsibe.open{
+  transform: translate(0);
+}
+
+.nav-link{
+  color: var(--degradado-top) !important;
+  padding: 2rem 0 !important;
+  width: 100%;
+}
+
+.menu-icon{
+  color: #fff;
+  padding: 1rem;
+}
+
+.close-icon{
+  padding: 1rem;
+}
+
+.menu-icon svg, .close-icon svg{
+  height: 40px;
+  width: 35px;
+}
+
+.destok{
+  display: flex;
+  flex-direction: row !important;
+  justify-content: flex-end;
+  padding-top: 2rem !important;
+}
+
+.destok .nav-link{
+  color: #fff !important;
+  padding: .6rem .8rem !important;
+  width: auto;
 }

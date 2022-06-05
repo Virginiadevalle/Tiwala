@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+    
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/utilitis.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
@@ -23,49 +24,96 @@
   </head>
   <body>
     <header class="hero">
-      <div class="d-flex justify-content-end pe-md-5 pt-5">
-        <nav class="nav p-0">
-          <a
-            class="nav-link font-size-18 text-white px-5 py-0 btn btn-primary"
-            aria-current="page"
-            href="#"
-            >Home</a
-          >
-          <a
-            class="nav-link font-size-18 text-white px-3 py-0 btn btn-primary"
-            href="#"
-            >Quienes Somos</a
-          >
-          <a
-            class="nav-link font-size-18 text-white px-5 py-0 btn btn-primary"
-            href="#"
-            >Servicios</a
-          >
-          <a
-            class="nav-link font-size-18 text-white px-5 py-0 btn btn-primary"
-            href="#"
-            >Equipo</a
-          >
-          <a
-            class="nav-link font-size-18 text-white px-5 py-0 btn btn-primary"
-            href="#"
-            >Ubicación</a
-          >
-          <a
-            class="nav-link font-size-18 text-white px-5 py-0 btn btn-primary"
-            href="#"
-            >Contacto</a
-          >
-        </nav>
+      <div class="d-flex justify-content-end d-md-none">
+        <i id="menu" class="menu-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </i>
       </div>
+      <nav id="menu-list" class="nav p-0 menu-responsibe d-md-none">
+        <div class="d-flex justify-content-end">
+          <i id="close" class="close-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+              <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+            </svg>
+          </i>
+        </div>
+        <a
+          class="nav-link font-size-18 text-white px-5 py-0 btn btn-primary"
+          aria-current="page"
+          href="#"
+          >Home</a
+        >
+        <a
+          class="nav-link font-size-18 text-white px-3 py-0 btn btn-primary"
+          href="#"
+          >Quienes Somos</a
+        >
+        <a
+          class="nav-link font-size-18 text-white px-5 py-0 btn btn-primary"
+          href="#"
+          >Servicios</a
+        >
+        <a
+          class="nav-link font-size-18 text-white px-5 py-0 btn btn-primary"
+          href="#"
+          >Equipo</a
+        >
+        <a
+          class="nav-link font-size-18 text-white px-5 py-0 btn btn-primary"
+          href="#"
+          >Ubicación</a
+        >
+        <a
+          class="nav-link font-size-18 text-white px-5 py-0 btn btn-primary"
+          href="#"
+          >Contacto</a
+        >
+      </nav>
+
+      <nav  class="nav destok p-0 container d-none d-md-flex">
+        <a
+          class="nav-link font-size-18 text-white px-5 py-0 btn btn-primary"
+          aria-current="page"
+          href="#"
+          >Home</a
+        >
+        <a
+          class="nav-link font-size-18 text-white px-3 py-0 btn btn-primary"
+          href="#"
+          >Quienes Somos</a
+        >
+        <a
+          class="nav-link font-size-18 text-white px-5 py-0 btn btn-primary"
+          href="#"
+          >Servicios</a
+        >
+        <a
+          class="nav-link font-size-18 text-white px-5 py-0 btn btn-primary"
+          href="#"
+          >Equipo</a
+        >
+        <a
+          class="nav-link font-size-18 text-white px-5 py-0 btn btn-primary"
+          href="#"
+          >Ubicación</a
+        >
+        <a
+          class="nav-link font-size-18 text-white px-5 py-0 btn btn-primary"
+          href="#"
+          >Contacto</a
+        >
+      </nav>
+      
 
       <div class="d-flex justify-content-center mt-150">
-        <h1 class="font-size-90 text-white site-title"><strong>Lorem ipsum</strong></h1>
+        <h1 class="font-size-90 text-white site-title"><strong>Lorem ipsum</strong></h1> 
       </div>
-      <div class="d-flex justify-content-end mt-150 me-100 pb-5">
+      <div class="d-flex justify-content-center justify-content-md-end mt-150 me-100 pb-5">
         <div class="m-whidth-180">
           <form action="">
-            <p class="font-size-20 text-white">
+            <p class="font-size-20 text-white text-center">
               Lorem ipsum dolor sit amet consecte
             </p>
             <div class="header-formulario-container my-3 m-whidth-180">
@@ -108,8 +156,8 @@
       <section class="quienes-somos">
         <div class="container">
           <div class="row">
-            <div class="col-2"></div>
-            <div class="col-8">              
+            <div class="col-12 col-md-2"></div>
+            <div class="col-12 col-md-8 px-4">              
               <div class="quienes-somos-info">
                 <h2 class="uppercase color-titles section-title">Quienes Somos</h2>
                 <p class="ps-md-5 text-justify d-flex line gothan-light">
@@ -206,7 +254,7 @@
         </div>
       </section>
       <section class="nuestro-equipo">
-        <div class="container">
+        <div class="container px-4">
           <div>
             <h2 class="uppercase color-primary section-title mb-5">Nuestro Equipo</h2>
           </div>
@@ -265,7 +313,7 @@
         </div>
       </section>
       <section class="ubicacion bg-gradient-container">
-        <div class="container d-flex justify-content-center ubicacion-container">
+        <div class="container px-4 d-flex justify-content-center ubicacion-container">
           <div class="row">
             <div class="col-12 col-lg-6">
               <div class="ubicacion-info">
@@ -294,7 +342,7 @@
           </div>
         </div>
       </section>
-      <section class="contacto contacto-img py-5">
+      <section class="contacto contacto-img py-5 px-4">
         <div class="container">
           <div class="col-12 col-md-5">
             <div class="contacto-info">
@@ -315,9 +363,11 @@
           </div>
         </div>
       </section>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-      <script src="./js/owl.carousel.min.js"></script>
-      <script src="./js/main.js"></script>
+      
     </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

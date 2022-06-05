@@ -1,6 +1,5 @@
 /* Utilidades */
 
-
 /* Btn start */
 .btn {
   padding: 0px 40px;
@@ -72,21 +71,26 @@
 .font-size-20 {
   font-size: 20px;
 }
-.font-size-90 {
-  font-size: 90px;
-  text-transform: uppercase;
+@media (min-width: 992px) {
+  .font-size-90 {
+    font-size: 90px;
+    text-transform: uppercase;
+  }
 }
+
 .uppercase {
   text-transform: uppercase;
 }
 /* Fuentes end */
 
 /* margins */
-.mt-150 {
-  margin-top: 150px;
-}
-.me-100 {
-  margin-right: 100px;
+@media (min-width: 992px) {
+  .mt-150 {
+    margin-top: 150px;
+  }
+  .me-100 {
+    margin-right: 100px;
+  }
 }
 
 /* margins end */
@@ -107,7 +111,7 @@
 /* Utilidades */
 
 .line::before {
-  content: '';
+  content: "";
   background-color: var(--line);
   display: flex;
   width: 8px;
@@ -145,15 +149,15 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6d1583",endColorstr="#d62787",GradientType=1);
 }
 
-.section-title{
-    font-size: 24px;
-    font-family: 'Gotham Black', 'Arial Narrow', Arial, sans-serif;
+.section-title {
+  font-size: 24px;
+  font-family: "Gotham Black", "Arial Narrow", Arial, sans-serif;
 }
 
-.gothan-light{
-    font-family: 'Gotham Light', 'Arial Narrow', Arial, sans-serif;
+.gothan-light {
+  font-family: "Gotham Light", "Arial Narrow", Arial, sans-serif;
 }
 
 .top-60 {
-    top: 60%!important;
+  top: 60% !important;
 }
