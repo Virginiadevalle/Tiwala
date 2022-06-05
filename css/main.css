@@ -1,77 +1,214 @@
-:root{
-    --primary-color: #9E1E93;
-    --degradado-top: #6D1583;
-    --degradado-bottom: #D62787;
-    --degradado-top-2: #B9B9B7;
-    --degradado-bottom-2: #CECECC;
+:root {
+  --primary-color: #9e1e93;
+  --degradado-top: #6d1583;
+  --degradado-bottom: #d62787;
+  --degradado-top-2: #b9b9b7;
+  --degradado-bottom-2: #cececc;
+  --line: #df0088;
 }
 
+@font-face {
+  font-family: 'Gotham Medium';
+  src: url('../fonts/Gotham-Medium.otf');
+  font-style: bold;
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Gotham Black';
+  src: url('../fonts/Gotham-Black.otf');
+  font-style: bold;
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Gotham Light';
+  src: url('../fonts/Gotham-Light.otf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+.btn{
+    font-family: 'Gotham Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.site-title{
+    font-family: 'Gotham Black', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+body {
+  font-family: 'Gotham Black', 'Arial Narrow', Arial, sans-serif;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
 
 /* seccion header start */
-.hero{
-    background-image: url(../img41.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.hero {
+  background-image: url(../img41.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
 }
 
+.header-formulario-input {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid white;
+  box-shadow: none;
+  padding: 5px;
+}
 .header-formulario-input{
-    width: 100%; 
-    background-color: transparent;
-    border: 1px solid white;
-    box-shadow: none;
-    padding: 5px; 
+    text-align: center;
+}
+.header-formulario-input::placeholder {
+    color: #eee;
+    opacity: 1; /* Firefox */
+}
+.header-formulario-input:focus-visible {
+    border-radius: 0 !important;
+    outline: none;
 }
 /* seccion header end */
 
-/* seccion servicios start */
-.servicio-img{
-    background-image: url(../img42.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+/* quienes somos */
+
+.quienes-somos-info{
+    padding: 5rem 0;
 }
-.servicios-card{
-    border: 1px solid white;
-    padding: 20px;
-    text-align: center;
+
+/* quienes somos */
+
+/* seccion servicios start */
+.servicio-img {
+  background-image: url("../servicio.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.servicios-item {
+  padding: 20px;
+  text-align: center;
+}
+.servicios{
+    min-height: 650px;
+    padding: 4rem;
+}
+.carrusel-servicio{
+    position: relative;
+}
+.carrusel-servicio-arrow{
+    display: block;
+    min-width: 60px;
+    max-width: 60px;
+    position: absolute;
+    cursor: pointer;
+}
+.servicios-item-icon{
+    width: 70px;
+    height: 65px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.owl-carousel{
+    max-width: 1100px;
+    margin: auto;
+}
+.owl-team{
+    max-width: 1000px;
+}
+.servicios-item-body{
+    position: relative;
+    border: 1px solid #eee;
+    min-height: 200px;
+}
+.servicios-item-btn{
+    position: relative;
+    margin-top: -21px;
+}
+.servicios-item-description{
+    padding: 0.5rem;
+}
+.servicio-btn-bottom{
+    position: absolute;
+    width: 60%;
+    bottom: -13px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #9e1e93 !important;
 }
 /* seccion servicios end */
 
 /* seccion nuestro equipo start */
-.nuestro-equipo-card-img-1{
-    background-image: url(../img45.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    
+.nuestro-equipo{
+    padding: 6rem 0;
 }
-.nuestro-equipo-card-img-2{
-    background-image: url(../img43.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    
+.nuestro-equipo-card-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 550px;
+  position: relative;
 }
-.nuestro-equipo-card-img-3{
-    background-image: url(../img44.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    
+.nuestro-equipo-card-img::before{
+    content: "";
+    background-color: rgb(214, 39, 135, 0.59);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.nuestro-equipo-card-img.bg-1{
+  background-image: url(../img45.jpg);
+}
+
+.nuestro-equipo-content{
+    z-index: 1;
+    padding: 3rem;
+}
+
+.nuestro-equipo-card-img.bg-2 {
+  background-image: url(../img43.jpg);
+
+}
+.nuestro-equipo-card-img.bg-3 {
+  background-image: url(../img44.jpg);
 }
 /* seccion nuestro equipo end */
 
 /* Ubicacion start  */
-
+.ubicacion-img {
+  overflow: hidden;
+  border-radius: 50px;
+}
 /* Ubicacion end  */
 
 /* seccion contacto start */
-.contacto-img{
-    background-image: url(../img40.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    
+.contacto-img {
+  background-image: url(../img40.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 619px;
+}
+.contacto-description {
+  font-size: 18px;
 }
 /* seccion contacto end */
+
+@media (min-width: 992px) {
+  .ubicacion-img {
+    width: 400px;
+  }
+}
+
+.ubicacion-container{
+    padding: 5rem 0;
+}
+
+.owl-nav, .owl-dots{
+    display: none;
+}
