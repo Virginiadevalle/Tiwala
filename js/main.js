@@ -3,7 +3,7 @@ $(document).ready(function () {
 
   owl.owlCarousel({
     items: 3,
-    margin: 30,
+    margin: 10,
     loop: true,
     dots: false,
     responsive: {
@@ -22,10 +22,14 @@ $(document).ready(function () {
       },
     },
   })
-  $('.left.carrusel-servicio-arrow').click(function () {
+  $('#left').click(function () {
+    console.log("aqui")
+    console.log("aqui")
     owl.trigger('prev.owl.carousel')
   })
-  $('.right.carrusel-servicio-arrow').click(function () {
+  
+  $('#right').click(function () {
+    console.log("aqui")
     owl.trigger('next.owl.carousel')
   })
   const team = $('.owl-team')
